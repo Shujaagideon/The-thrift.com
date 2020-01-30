@@ -1,0 +1,424 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(218, 218, 180);
+    overflow-x: hidden;
+}
+
+/* containers */
+
+.container{
+    width: 99vw;
+    border: grey solid 2px;
+    border-radius: 15px;
+    margin-bottom: 2px;
+}
+
+#container_1{
+    height: 140vh;
+    background-image: linear-gradient(to bottom, rgba(153, 151, 151, 0.918),rgb(0, 0, 0)), url(../thriftimages/thrift\ \(3\).jpg);
+    background-size: contain;
+    position: relative;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+.header{
+    height: 300px;
+    width: 300px;
+    border: rgb(216, 213, 213) solid 2px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 40%;
+    top: -16%;
+    background-color: rgba(163, 154, 154, 0.815);
+}
+
+.text{
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    font-family:  Cochin,Cambria, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+}
+
+.logo{
+    position: absolute;
+    height: 50%;
+    width: 10%;
+    border-right: rgb(216, 213, 213) solid 2px;
+    top: 20%;
+}
+
+.logo ul{
+    list-style: none;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo li{
+    transition: ease-in 0.4s;
+    margin: 30px;
+    font-size: 15px;
+
+}
+.logo li a{
+    text-decoration: none;
+    color: white;
+}
+
+.inside1{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 60px;
+    font-family: Cambria;
+}
+.last{
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    font-size: 80px;
+    font-family: magneto;
+    /* opacity: 0; */
+    /* -moz-: ; */
+}
+
+.moving{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    animation: fill 1.2s cubic-bezier(0.19,1,0.22,1) forwards ;
+}
+
+.inside1 h1{
+    opacity: 0.7;
+ 
+}
+
+.foot_1{
+    position: absolute;
+    bottom: 25%;
+    color:  rgb(253, 253, 253);
+    font-size: 10px;
+    left: 11%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-style: italic;
+}
+.window{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-100px,60px);
+    background-image:linear-gradient(to left,rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.678)), url(../thriftimages/culture3.jpg);
+    background-size: cover;
+}
+
+@keyframes fill{
+    0%{
+        left: 0;
+        width:0;
+    }
+    50%{
+        left: 0;
+        width:100%;
+    }
+    100%{
+        left: 100%;
+        width: 0;
+    }
+}
+
+/* contaoner_2 */
+
+#container_2{
+    height: 140vh;
+    position: relative;
+    border-top: 1px white solid;
+}
+
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom,rgba(41, 40, 40, 0.87),rgba(22, 19, 19, 0.815)),url(../thriftimages/culture.jpg);
+    background-size: cover;
+}
+
+.page2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    margin: 40px;
+    width: 850px;
+    color: white;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 150px;
+}
+
+.words{
+    position: relative;
+    height: 160vh;
+    width: 50%;
+    font-size: 30px;
+    color:whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 1;
+}
+
+.clothes{
+    position: relative;
+    width: 500px;
+    z-index: 1;
+    height: 100%;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.smooth{
+    position: absolute;
+    top: 10%;
+    width:2000px;
+    height: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.slide{
+    left: 10%;
+    top: 20%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.slide1{
+    position: absolute;
+    right: 10%;
+    float: right;
+    top: 20%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    align-items: center;
+}
+.slider{
+    height: 500px;
+    width: 500px;
+    opacity: 0.9;
+    box-shadow: grey 2px;
+    float: left;
+}
+
+.slider img{
+    height: 500px;
+    width: 500px;
+}
+
+.description{
+    position: absolute;
+    top:60%;
+    left: 25%;
+    color: bisque;
+    transform: translate(-50% -50%);
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+    transition: all 500ms;
+    font-family: Cambria, Cochin;
+    opacity: 0;
+}
+.slider:hover .description{
+    top:50%;
+    left: 25%;
+    color: bisque;
+    transform: translate(-50% -50%);
+    font-size: 18px;
+    text-align: center;
+    opacity: 1;
+}
+.slider:hover img{
+    filter:blur(3.5px) brightness(30%) ;
+}
+
+figure{
+    position: relative;
+}
+
+#container_3{
+    position: relative;
+    height: 450vh;
+    background-color: rgba(14, 13, 13, 0.726);
+}
+
+.just-text1{
+    position: absolute;
+    height: 20%;
+    left: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.just-text2{
+    position: absolute;
+    top: 26%;
+    height: 20%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.just-text3{
+    position: absolute;
+    height: 20%;
+    top: 55%;
+    left: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+}
+.just-text4{
+    position: absolute;
+    height: 20%;
+    left: 0;
+    top: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.intel1{
+    position: absolute;
+    height: 20%;
+    left: 10%;
+    top: 3%;
+    
+}
+
+.intel2{
+    position: absolute;
+    height: 20%;
+    left: 50%;
+    width: 90%;
+    top: 26%;
+}
+
+.intel3{
+    position: absolute;
+    height: 20%;
+    left: 10%;
+    width: 90%;
+    top: 55%;
+}
+
+.intel4{
+    position: absolute;
+    height: 20%;
+    left: 60%;
+    width: 70%;
+    top:80% ;
+}
+
+.meme{
+    margin: 10px;
+    padding: 5px;
+    height: 20%;
+    object-fit: contain;
+    overflow: hidden;
+}
+.drifty{
+    height: 100%;
+    width: 100%;
+}
+.meme img{
+    height: 80%;
+    width: 40%;
+}
+
+.just h1{
+    text-transform: uppercase;
+    color: honeydew;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.just p{
+    font-size: 18px;
+    color: rgba(126, 252, 0, 0.795);
+    font-family: monospace;
+    padding: 4px;
+    margin: 10px;
+}
+.moving1{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(126, 252, 0, 0.678);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fff;
+    animation: filling 2s cubic-bezier(0.19,1,0.22,1) forwards ;
+}
+
+@keyframes filling{
+    0%{
+        left: 0;
+        width:0;
+    }
+    50%{
+        left: 0;
+        width:40%;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        left: 40%;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+
+
